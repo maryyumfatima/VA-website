@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+@theme {
+  --color-onyx: #121212;
+  --color-parchment: #F3F0EF;
+  
+  --color-molten: #D03131;
+  --color-molten-dark: #A51C1C;
+  --color-molten-light: #E85B5B;
+  
+  --color-forest: #1A3322;
+  --color-forest-dark: #0F2014;
+  --color-forest-light: #2A4D35;
+  
+  --font-sans: 'Poppins', 'Inter', system-ui, sans-serif;
+  --font-display: 'Outfit', 'Inter', system-ui, sans-serif;
+  --font-mono: 'Poppins', system-ui, sans-serif;
+  
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-marquee: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@layer base {
+  body {
+    background-color: #ffffff; /* Clean white background */
+    color: #121212; /* Onyx text */
+    font-family: 'Poppins', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    color: #121212;
+  }
+}
+
+/* Custom Clean Brutalist Crimson styles */
+.glass-card {
+  background: #D03131; /* Solid Crimson background */
+  border: 1.5px solid #121212; /* Black border for brutalist aesthetic */
+  box-shadow: 4px 4px 0px #121212; /* Brutalist shadow */
+  color: #ffffff; /* High contrast white text default */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #121212;
+}
+
+/* Force elements inside orange bento cards to have legible white text colors */
+.glass-card h4, 
+.glass-card h3,
+.glass-card p,
+.glass-card span {
+  color: #ffffff !important;
+}
+
+.glass-card .text-parchment\/70,
+.glass-card .text-parchment\/50,
+.glass-card .text-parchment\/30,
+.glass-card .text-parchment\/40 {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.glass-modal {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-left: 1.5px solid #121212;
+  color: #121212;
+}
+
+/* Noise overlay effect for premium analog feel */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.015;
+  z-index: 9999;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Swiss brutalist structural grid lines */
+.brutalist-grid {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(18, 18, 18, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(18, 18, 18, 0.04) 1px, transparent 1px);
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d1d1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D03131; /* Crimson thumb */
+}
+
+/* Active states & typography helper styles */
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(243, 240, 239, 0.15);
+  color: transparent;
+}
+
+.text-stroke:hover {
+  -webkit-text-stroke: 1px #D03131;
+}
+
+/* Custom radio option styling for proposal drawer */
+.custom-radio:checked + label {
+  background-color: #D03131;
+  color: #F3F0EF;
+  border-color: #D03131;
+}
+
+/* Glow highlight pulses */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(208, 49, 49, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(208, 49, 49, 0.4);
+  }
+}
+
+/* Glassmorphism Bento Cards */
+.bento-glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1.5px solid rgba(18, 18, 18, 0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.bento-glass:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px rgba(18, 18, 18, 0.10);
+  border-color: rgba(18, 18, 18, 0.18);
+}
+
+/* Tech Marquee — hardware accelerated */
+.marquee-outer {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  transform: translateZ(0);
+  animation: marquee 32s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
