@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-onyx: #121212;
+  --color-onyx: #2E343A;
   --color-parchment: #F3F0EF;
   
-  --color-molten: #D03131;
-  --color-molten-dark: #A51C1C;
-  --color-molten-light: #E85B5B;
+  --color-molten: #6a8efb;
+  --color-molten-dark: #4a6edb;
+  --color-molten-light: #8aaefd;
   
   --color-forest: #1A3322;
   --color-forest-dark: #0F2014;
@@ -28,27 +28,27 @@
 @layer base {
   body {
     background-color: #ffffff; /* Clean white background */
-    color: #121212; /* Onyx text */
+    color: var(--color-onyx); /* Onyx text */
     font-family: 'Poppins', sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Outfit', sans-serif;
-    color: #121212;
+    color: var(--color-onyx);
   }
 }
 
-/* Custom Clean Brutalist Crimson styles */
+/* Custom Clean Brutalist Accent styles */
 .glass-card {
-  background: #D03131; /* Solid Crimson background */
-  border: 1.5px solid #121212; /* Black border for brutalist aesthetic */
-  box-shadow: 4px 4px 0px #121212; /* Brutalist shadow */
+  background: #6a8efb; /* Solid accent background */
+  border: 1.5px solid #3a5abb; /* Blue outline */
+  box-shadow: 4px 4px 0px var(--color-onyx); /* Brutalist shadow */
   color: #ffffff; /* High contrast white text default */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .glass-card:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px #121212;
+  box-shadow: 6px 6px 0px var(--color-onyx);
 }
 
 /* Force elements inside orange bento cards to have legible white text colors */
@@ -70,8 +70,8 @@
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-left: 1.5px solid #121212;
-  color: #121212;
+  border-left: 1.5px solid var(--color-onyx);
+  color: var(--color-onyx);
 }
 
 /* Noise overlay effect for premium analog feel */
@@ -92,8 +92,8 @@
 .brutalist-grid {
   background-size: 60px 60px;
   background-image: 
-    linear-gradient(to right, rgba(18, 18, 18, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(18, 18, 18, 0.04) 1px, transparent 1px);
+    linear-gradient(to right, rgba(46, 52, 58, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(46, 52, 58, 0.04) 1px, transparent 1px);
 }
 
 /* Custom premium scrollbar */
@@ -109,7 +109,7 @@
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #D03131; /* Crimson thumb */
+  background: #6a8efb; /* Accent thumb */
 }
 
 /* Active states & typography helper styles */
@@ -119,23 +119,23 @@
 }
 
 .text-stroke:hover {
-  -webkit-text-stroke: 1px #D03131;
+  -webkit-text-stroke: 1px #6a8efb;
 }
 
 /* Custom radio option styling for proposal drawer */
 .custom-radio:checked + label {
-  background-color: #D03131;
+  background-color: #6a8efb;
   color: #F3F0EF;
-  border-color: #D03131;
+  border-color: #6a8efb;
 }
 
 /* Glow highlight pulses */
 @keyframes glow-pulse {
   0%, 100% {
-    box-shadow: 0 0 15px rgba(208, 49, 49, 0.2);
+    box-shadow: 0 0 15px rgba(106, 142, 251, 0.2);
   }
   50% {
-    box-shadow: 0 0 30px rgba(208, 49, 49, 0.4);
+    box-shadow: 0 0 30px rgba(106, 142, 251, 0.4);
   }
 }
 
@@ -144,14 +144,14 @@
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1.5px solid rgba(18, 18, 18, 0.08);
+  border: 1.5px solid #3a5abb;
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
 .bento-glass:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 4px 4px 0px rgba(18, 18, 18, 0.10);
-  border-color: rgba(18, 18, 18, 0.18);
+  box-shadow: 4px 4px 0px rgba(46, 52, 58, 0.10);
+  border-color: #3a5abb;
 }
 
 /* Tech Marquee — hardware accelerated */
