@@ -276,9 +276,9 @@ export default function ServicesBento() {
                 </div>
                 <div className="mt-4 text-left">
                   <span className="hidden lg:block font-mono text-xs text-onyx/40 font-bold mb-2">01</span>
-                  <h4 className="text-2xl font-black uppercase tracking-tight mb-3 text-onyx font-display">INBOX & MESSAGING</h4>
+                  <h4 className="text-2xl font-black uppercase tracking-tight mb-3 text-onyx font-display">INBOX & STUDENT SUPPORT</h4>
                   <p className="text-sm md:text-base text-onyx/80 leading-relaxed font-sans">
-                    I manage your inbox and daily messaging, filtering out the noise and prioritizing high-value conversations so you can save time.
+                    I manage your inbox and student support, filtering out the noise and handling inquiries so you can focus on high-value conversations.
                   </p>
                 </div>
               </div>
@@ -299,9 +299,9 @@ export default function ServicesBento() {
                   <span className="font-mono text-xs text-onyx/40 font-bold">02</span>
                 </div>
                 <div className="mt-4 text-left">
-                  <h4 className="text-2xl font-black uppercase tracking-tight mb-2 text-onyx font-display">CALENDAR & SCHEDULING</h4>
+                  <h4 className="text-2xl font-black uppercase tracking-tight mb-2 text-onyx font-display">CALENDAR & TIME PROTECTION</h4>
                   <p className="text-sm text-onyx/80 leading-relaxed font-sans">
-                    I structure your schedule and protect your focus time, handling booking requests so you never have to chase appointments.
+                    I structure your schedule and fiercely protect your deep work time, ensuring your podcast interviews, internal syncs, and boundaries are respected.
                   </p>
                 </div>
               </div>
@@ -319,9 +319,9 @@ export default function ServicesBento() {
                 <span className="font-mono text-xs text-onyx/40 font-bold">03</span>
               </div>
               <div className="mt-4 text-left">
-                <h4 className="text-2xl font-black uppercase tracking-tight mb-3 text-onyx font-display">RESEARCH & ANALYSIS</h4>
+                <h4 className="text-2xl font-black uppercase tracking-tight mb-3 text-onyx font-display">RESEARCH & CONTENT PREP</h4>
                 <p className="text-sm md:text-base text-onyx/80 leading-relaxed font-sans">
-                  I turn complex data into brief, clear summaries, keeping you informed so you can make profitable decisions quickly.
+                  I research market trends and prep your course materials, turning raw data into clear summaries for your next launch.
                 </p>
               </div>
             </div>
@@ -339,9 +339,9 @@ export default function ServicesBento() {
                 </div>
                 <div className="mt-4 text-left">
                   <span className="hidden lg:block font-mono text-xs text-onyx/40 font-bold mb-2">04</span>
-                  <h4 className="text-2xl font-black uppercase tracking-tight mb-3 text-onyx font-display">LEAD-ORIENTED WORKFLOWS</h4>
+                  <h4 className="text-2xl font-black uppercase tracking-tight mb-3 text-onyx font-display">PLATFORMS & LAUNCH SYSTEMS</h4>
                   <p className="text-sm md:text-base text-onyx/80 leading-relaxed font-sans font-medium">
-                    I set up and manage your business tools, automating repetitive tasks to keep your lead pipeline organized and flowing without friction.
+                    I set up and manage your course platforms and automate repetitive tasks to keep your launch systems flowing without friction.
                   </p>
                 </div>
               </div>

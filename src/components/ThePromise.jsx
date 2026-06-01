@@ -77,7 +77,7 @@ export default function ThePromise() {
             variants={slideUpItem} 
             className="mt-8 text-sm md:text-base text-white/70 max-w-3xl font-mono uppercase tracking-wider leading-relaxed"
           >
-            I work exclusively with one founder at a time. I manage your inbox, structure your schedule, and set up lead-generating systems so you never have to chase tasks or follow up with me. By freeing your time and organizing your pipeline, I help you bring more clients, close more deals, and put more money on the table.
+            I work exclusively with one founder at a time. I manage your student support inbox, structure your calendar to protect your time, and optimize your course platforms. By freeing your time from administrative bottlenecks, I help you launch successfully, scale your programs, and put more money on the table.
           </motion.p>
         </div>
       </motion.div>

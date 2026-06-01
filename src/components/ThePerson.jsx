@@ -57,7 +57,7 @@ export default function ThePerson() {
           >
             <div className="overflow-hidden border border-onyx/10 relative z-10 aspect-[4/5] bg-onyx/5">
               <img 
-                src="/maryyum_portrait.png" 
+                src="/maryyums-Portrait.jpeg" 
                 alt="Maryyum Fatima" 
                 className="w-full h-full object-cover filter grayscale contrast-125 hover:scale-105 transition-transform duration-500"
               />
@@ -78,13 +78,13 @@ export default function ThePerson() {
               // MARYYUM FATIMA
             </span>
             <h3 className="text-4xl md:text-5xl font-black uppercase text-onyx tracking-tight font-display mb-6">
-              EXECUTIVE OPERATIONS PARTNER
+              EXECUTIVE OPERATIONS PARTNER FOR DIGITAL COACHES
             </h3>
             <p className="text-base md:text-lg text-onyx/80 font-sans leading-relaxed mb-6 font-normal">
-              I am a dedicated operations partner who works directly with growing business owners. Over years of helping companies run smoothly, I have seen firsthand how founders get slowed down by day-to-day administration, chaotic schedules, and tools that stop working without warning.
+              I am a dedicated operations partner who works directly with growing digital coaches and course creators. Over the years, I have seen firsthand how founders get bogged down by messy course platforms, endless student support emails, and chaotic launch schedules.
             </p>
             <p className="text-base md:text-lg text-onyx/80 font-sans leading-relaxed mb-8 font-normal">
-              My approach is simple: I work with only one client at a time. This guarantees you get my undivided attention and a dedicated partner who keeps your business organized, frees up your time, and sets up reliable, automated systems that bring in more leads.
+              My approach is simple: I work with only one client at a time. This guarantees you get my undivided attention and a dedicated partner who keeps your coaching programs organized, ensures your students are supported, and sets up automated funnels that bring in more high-quality leads.
             </p>
             <p className="text-lg md:text-xl text-onyx font-sans font-bold leading-relaxed border-l-4 border-molten pl-6 py-1 italic">
               "I am looking for long-term partners, not just tasks. If that's you, let's talk."

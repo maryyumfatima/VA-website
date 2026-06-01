@@ -63,7 +63,7 @@ export default function Hero({ onOpenProposal }) {
           variants={slideUpItem}
           className="text-5xl sm:text-7xl lg:text-8xl font-black uppercase tracking-tight text-onyx leading-[0.85] max-w-5xl mb-10 font-display"
         >
-          YOUR BUSINESS <br />
+          YOUR COACHING BUSINESS <br />
           IS RUNNING YOU. <br />
           <span className="text-molten">LET'S FIX THAT.</span>
         </motion.h1>
@@ -80,7 +80,7 @@ export default function Hero({ onOpenProposal }) {
           className="flex flex-col lg:flex-row lg:items-end justify-between w-full max-w-4xl gap-8"
         >
           <p className="text-lg md:text-xl text-onyx/80 font-sans leading-relaxed max-w-xl">
-            I act as your right-hand operator, handling the heavy lifting behind the scenes so you can save time, stop chasing tasks, and focus on bringing in more leads.
+            I act as your right-hand operator for 6-figure coaches and course creators, handling the heavy lifting—from student onboarding to platform management—so you can focus on creating content and closing high-ticket clients.
           </p>
 
           <div className="flex flex-wrap gap-4 shrink-0">
